@@ -139,13 +139,13 @@ footer span a:hover{
 
 
 /* Seiten Inhalt */
-.studium, .tutorial, .projekte {
+.studium, .tutorial, .projekte, .sonstiges {
     width: 100%;  
     margin: 0px auto;
     padding: 0 10%;
     padding-top: 20px;
     padding-bottom: 10px;
-    text-transform: capitalize;
+    text-transform: none;
 }
 
 .studium {
@@ -164,6 +164,13 @@ footer span a:hover{
 
 .projekte {
     background: url('bilder/projekte2.jpg') no-repeat center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.sonstiges {
+    background: url('bilder/sonstiges.jpg') no-repeat center;
     min-height: 100vh;
     background-size: cover;
     background-position: center;
@@ -235,7 +242,7 @@ h1 {
 }
 
 @media (max-width:770px) {
-    .studium, .tutorial, .projekte{
+    .studium, .tutorial, .projekte, .sonstiges{
         padding: 20px;
     }
 }
